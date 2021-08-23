@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 1px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: block;
+    box-sizing: border-box;
+}
+
+#main {
+}
+
+body {
+    background-image: url("./assets/img/gd.jpg");
+}
+
+#nav {
+    display: inline-block;
+}
+
+.header {
+    height: 45.6px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header {
+    height: 45.6px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* tac dong len the li cap 1 */
+#nav > li {
+    display: inline-block;
+}
+
+#nav .subnav {
+    list-style-type: none;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+/* #nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+} */
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+    #nav .subnav a {
+        color: #000;
+        padding-left: 12px;
+        line-height: 38px;
+    }
+
+#nav .nav-icon-down {
+    font-size: 25px;
+}
+
+#header .logout-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .logout-btn {
+    float: right;
+}
+
+#header .logout-icon {
+    color: #fff;
+    line-height: 45.6px;
+    font-size: 18px;
+    padding: 0 21px;
+}
+
+.title {
+    background-color: #ededed;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+}
+
+/*search*/
+.search input {
+    background-color: white;
+    border-color: black;
+    border-radius: 15px 15px 15px 15px;
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    outline: none;
+    position: sticky;
+    width: 30%;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 525px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+
+/*them san*/
+.content {
+    width: 760px;
+    min-height: 450px;
+    margin: 50px auto 45px;
+    padding-bottom: 100px;
+    border: 1px solid #e3e1dc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+   
+.content {
+    width: 760px;
+    min-height: 450px;
+    margin: 50px auto 45px;
+    padding-bottom: 100px;
+    border: 1px solid #e3e1dc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.content .title {
+        margin: 80px 0 50px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: white;
+    }
+
+#themsantap-ten {
+    display: block;
+    width: 363px;
+    padding: 12px 15px;
+    border: 1px solid #dad8d3;
+    border-radius: 3px;
+    line-height: 14px;
+    font-size: 15px;
+    background-color: #ffffff;
+    margin-left: 170px;
+    margin-bottom: 20px
+}
+
+#themsantap-sdt {
+    display: block;
+    width: 363px;
+    padding: 12px 15px;
+    border: 1px solid #dad8d3;
+    border-radius: 3px;
+    line-height: 14px;
+    font-size: 15px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+input[type="date" i] {
+    display: block;
+    width: 363px;
+    padding: 12px 15px;
+    border: 1px solid #dad8d3;
+    border-radius: 3px;
+    line-height: 14px;
+    font-size: 15px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+input[type="time" i] {
+    display: block;
+    width: 363px;
+    padding: 12px 15px;
+    border: 1px solid #dad8d3;
+    border-radius: 3px;
+    line-height: 14px;
+    font-size: 15px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}
+
+#button-themmoi input[type="submit" i] {
+    display: block;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #e8171f;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 255px;
+    width: 200px;
+}
+
+
+
+#line-san {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+}

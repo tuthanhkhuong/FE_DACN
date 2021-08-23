@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/themsantap.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <title>THEM SAN TAP</title>
+</head>
+
+<body>
+
+
+    <!--header-->
+    <div clas="header-tittle">
+        <div class="header">
+            <ul id="nav">
+                <li>
+                    <a href="">
+                        <i class="logo-icon fa fa-home"></i>
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="logo-icon fa fa-bell"></i>
+                        Quản lý thông báo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="logo-icon fa fa-calendar-alt"></i>
+                        Quản lý sự kiện
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="logo-icon fa fa-users"></i>
+                        Quản lý thành viên
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="logo-icon fa fa-sitemap"></i>
+                        Quản lý buổi tập
+                        <i class="nav-icon-down fas fa-sort-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="">
+                                <i class="logo-icon fa fa-toggle-on">
+                                </i> Trạng thái sân tập
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="logo-icon fa fa-toggle-on">
+                                </i> Trạng thái người chơi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="logo-icon fa fa-file-import">
+                                </i> Tạo hóa đơn
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="logo-icon fa fa-sitemap"></i>
+                        Quản lý nguồn vốn
+                        <i class="nav-icon-down fas fa-sort-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="">
+                                <i class="logo-icon fa fa-file-excel">
+                                </i> Thống kê thu chi theo tuần
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="logo-icon fa fa-file-excel">
+                                </i> Thống kê thu chi theo tháng
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="logout-btn">
+            <i class="logout-icon fa fa-sign-out-alt"></i>
+        </div>-->
+    </div>
+
+    <div class="title">
+        <i class="logo-icon fa fa-calendar-alt"></i>
+        <span id="ctl00_ContentPlaceHolder1_ctl00_lbltieudetkb" class="Label">Thêm Sân Tập</span>
+    </div>
+
+    <!--search-->
+    <div class="search">
+        <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-live="polite" placeholder="Tìm kiếm...">
+    </div>
+
+    <div style="text-align: center">
+        <input type="submit" name="btnThemmoi" value="Thêm mới" class="DefaultButton">
+        <input type="submit" name="btnSua" value="Sửa" class="DefaultButton">
+        <input type="submit" name="btnXoa" value="Xóa" class="DefaultButton">
+    </div>
+
+    <!--them san-->
+
+    <div id="main-panel">
+        <div class="content" style="top: 0px;">
+            <h2 class="title">Thông tin sân tập</h2>
+            <form id="them-san-tap" class="themsantap">
+
+                <div id="line-tenthanhvien">
+                    <input id="themsantap-ten" type="text" placeholder="Tên thành viên" autocorrect="off" autocapitalize="off" />
+                </div>
+
+                <div id="line-sdt">
+                    <input id="themsantap-sdt" type="text" placeholder="Số điện thoại" autocorrect="off" autocapitalize="off">
+                </div>
+
+                <div id="line-ngay">
+                    <input type="date">
+                </div>
+                
+                <div id="line-time">
+                    <input type="time" name="usr_time">
+                </div>
+
+                <div id="line-san">
+                    <input type="radio" name="san" value="san1" checked> Sân 1
+                    <br />
+                    <input type="radio" name="san" value="san2"> Sân 2
+                    <br />
+                    <input type="radio" name="san" value="san3" checked> Sân 3
+                    <br />
+                    <input type="radio" name="san" value="san4"> Sân 4
+                    <br />
+                    <input type="radio" name="san" value="san5" checked> Sân 5
+                </div>
+                
+                <div id="button-themmoi">
+                    <input type="submit" name="themmoibottom" value="Thêm mới">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

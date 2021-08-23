@@ -1,0 +1,41 @@
+doi mat khau :
+queen mat khau nut check (xac nhan)
+mat khau moi
+xac nhan mat khau moi
+
+home thanh vien:
+chuyen search len ben phai tin tuc
+bo dong mo cua san
+click vao hinh show ra thong tin
+
+thong tin san tap:
+bam vo cho ng xem dc thong tin san o dia chi nao
+
+
+quan li su kien + thong bao tin tuc show theo dang list
+su kien kem them nhieu hinh anh
+
+quan li su kien: 
+chia cho nhieu thanh vien
+khach vang lai se xem duoc hinh anh da xay ra
+thanh vien se xem duoc su kien moi nhat len tren trang dau
+
+thong tin san tap:
+tang kich thuoc
+
+home thanh vien:
+xoa so dien thoai
+thay bang nut lien he
+
+
+
+lam duoc back-end
+dang ky
+dang nhap
+doi mat khau
+
+tim hieu cong nghe:
+angular + api + git ve quan li source
+
+mung 1 gui co cuon bao cao
+lam bao cao trong ngay 30,31

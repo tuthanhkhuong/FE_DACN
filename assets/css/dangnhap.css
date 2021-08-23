@@ -1,0 +1,284 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#main {
+}
+
+
+
+img {
+    max-width: 45%;
+    border: 0;
+    vertical-align: middle;
+}
+
+
+.login {
+    height: 100vh;
+    background-image: url("D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/gd.jpg");
+    position: relative;
+    background-size: cover;
+}
+
+.header-login-right-hotline i {
+    color: #90ff01;
+    font-size: 20px;
+}
+
+.header-login-right-hotline span {
+    color: #20BE07;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header-login-right-hotline a {
+    color: #20BE07;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.header-login-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-login .header-login-container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-content {
+    position: absolute;
+    width: 37.8%;
+    right: 13.4%;
+    top: 14%;
+}
+
+.login-content-title-left p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.login-content-title-left span {
+    color: white;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login-content-title-left {
+    margin-right: 22px;
+    position: relative;
+}
+
+    .login-content-title-left:before {
+        content: "";
+        position: absolute;
+        background: white;
+        height: 33px;
+        width: 1px;
+        right: -17px;
+        top: 3px;
+        transform: rotate(17deg);
+    }
+
+.login-content-title-right span {
+    color: white;
+    font-family: "Times New Roman Italic";
+    font-size: 50px;
+}
+
+.login-content-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    justify-content: center;
+}
+
+.page-login .language {
+    margin-right: 45px;
+}
+
+    .page-login .language ul {
+        margin: 0px;
+        padding: 0px 15px;
+        list-style: none;
+    }
+
+    .page-login .language .language-container > a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: red;
+    }
+
+    .page-login .language ul > li.vi > a::before {
+        content: '';
+        background: url(../assets/img/iconvn.png);
+        width: 17px;
+        height: 11px;
+        display: inline-block;
+        margin-right: 7px;
+    }
+
+    .page-login .language ul > li.en > a::before {
+        content: '';
+        background: url(../assets/img/iconvn.png);
+        width: 17px;
+        height: 11px;
+        display: inline-block;
+        margin-right: 7px;
+    }
+
+form#user-login > div > .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#edit-forgot-password {
+    color: white;
+}
+    #edit-forgot-password a {
+        color: #20BE07;
+    }
+.form-group {
+    margin-bottom: 15px;
+}
+
+form#user-login > div > .form-group > label {
+    width: 130px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+    form#user-login > div > .form-group > input {
+        height: 40px;
+        padding: 0px 18px;
+        width: calc(100% - 135px);
+    }
+
+form#user-login input::placeholder {
+    color: #9d9d9d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+form#user-login .form-group span {
+    color: white;
+}
+
+form#user-login .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.login-content-form {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 42px 62px 40px 65px;
+    border-radius: 4px;
+}
+
+form#user-login .form-text {
+    width: 171px;
+}
+
+form#user-login button[type="submit"] {
+    color: #fff;
+    background: #20BE07;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: Arial;
+    width: 251px;
+    height: 45px;
+    margin: auto;
+    font-weight: bold;
+}
+
+form#user-login #edit-regiter-acount {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+    form#user-login #edit-regiter-acount a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #20BE07;
+        text-decoration: underline;
+        margin-left: 5px;
+    }
+
+form#user-login .hybridauth-widget-wrapper {
+    margin-top: 22px;
+}
+
+    form#user-login .hybridauth-widget-wrapper h3 {
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        margin-bottom: 37px;
+        font-weight: normal;
+       font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+        form#user-login .hybridauth-widget-wrapper h3::before {
+            position: absolute;
+            content: "";
+            background: #20BE07;
+            height: 1px;
+            width: 22px;
+            bottom: -10px;
+            left: calc(50% - 11px);
+        }
+#language-active.vi::before {
+    content: '';
+    background-image: url("D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/iconvn.jpg");
+    width: 24px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 7px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2px;
+}
+
+.all-right {
+    text-align: center;
+    background: #202020;
+    padding: 21px 0px;
+    /*position: absolute;*/
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+}
+
+    .all-right span {
+        font-size: 14px;
+        color: #fff;
+    }

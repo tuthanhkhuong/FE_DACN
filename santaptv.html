@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/santaptv.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <title>SAN TAP</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <header id="header">
+        <div class="container header-container">
+            <div class="header-container-inner">
+                <div class="header-logo">
+                    <h1>
+                        <a href="/vi" title="Quan ly san Badminton">
+                            <img class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/logo2.png" alt="Quan ly san Badminton">
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="header-right">
+                    <div id="header-menu" class="header-menu">
+
+                        <ul class="menu">
+                            <li>
+                                <a href="/vi/tin-tuc">
+                                    <i class="logo-icon fa fa-home"></i>
+                                    TIN TỨC
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/vi/su-kien">
+                                    <i class="logo-icon fa fa-bell"></i>
+                                    SỰ KIỆN
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="/vi/san-tap">
+                                    <i class="logo-icon fa fa-calendar-alt"></i>
+                                    SÂN TẬP
+                                </a>
+
+                            </li>
+
+
+                            <li>
+                                <a href="/vi/thong-tin-thanh-vien">
+                                    <i class="logo-icon fa fa-users"></i>
+                                    THÔNG TIN THÀNH VIÊN
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="header-hotline">
+                        <span class="hot-line">
+                            <a href="tel:19001080">19001080 </a> <span>/</span>
+                            <a href="tel: (+84)3939 2929">(+84)3939 2929</a>
+                        </span>
+                    </div>
+
+                    <span id="language-active" class=" vi"></span>
+
+                    <div class="header-login dropdown dropdown-user">
+                        <a class="user-avatar" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <img class="img-circle" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/avatar.jpg">
+
+                            <i class="caret"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--tittle-->
+    <div class="title">
+        <table style="width: 480px">
+            <tbody>
+                <tr>
+                    <td width="10px">
+                        <i class="logo-icon fa fa-calendar-alt"></i>
+                    </td>
+                    <td>
+                        <span id="ctl00_ContentPlaceHolder1_ctl00_lbltieudetkb" class="Label">Thông Tin Sân Tập</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <table>
+        <tbody>
+            <tr id="ctl00_ContentPlaceHolder1_ctl00_pnlTTCanhan">
+                <td colspan="2">
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" width="80px">
+                    <img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/logo2.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="font-size: 10px">
+                    <select name="ctl00$ContentPlaceHolder1$ctl00$ddlLoai" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ctl00$ddlLoai\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ctl00_ddlLoai" class="DropDown" style="width:150px;">
+                        <option selected="selected" value="0">Lịch tập theo tuần</option>
+                        <option value="2">Lịch tập theo tháng</option>
+                    </select>
+
+                    <select name="ctl00$ContentPlaceHolder1$ctl00$ddlTuan" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ctl00$ddlTuan\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ctl00_ddlTuan" class="DropDown" style="width:300px;">
+                        <option selected="selected" value="Tuần 01 [Từ 06/09/2021 -- Đến 12/09/2021]">Tuần 01 [Từ 06/09/2021 -- Đến 12/09/2021]</option>
+                        <option value="Tuần 02 [Từ 13/09/2021 -- Đến 19/09/2021]">Tuần 02 [Từ 13/09/2021 -- Đến 19/09/2021]</option>
+                        <option value="Tuần 03 [Từ 20/09/2021 -- Đến 26/09/2021]">Tuần 03 [Từ 20/09/2021 -- Đến 26/09/2021]</option>
+                        <option value="Tuần 04 [Từ 27/09/2021 -- Đến 03/10/2021]">Tuần 04 [Từ 27/09/2021 -- Đến 03/10/2021]</option>
+                        <option value="Tuần 05 [Từ 04/10/2021 -- Đến 10/10/2021]">Tuần 05 [Từ 04/10/2021 -- Đến 10/10/2021]</option>
+                    </select>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!--BANG TABLE LICH TAP-->
+    <div style="width: 100%; text-align: center; "></div>
+
+    <div id="ctl00_ContentPlaceHolder1_ctl00_pnlTuan">
+
+
+        <table id="ctl00_ContentPlaceHolder1_ctl00_Table1" class="classTable" cellspacing="0" cellpadding="1" border="0" style="border-color:#999999;border-width:1px;border-style:Solid;height:100%;width:100%;border-collapse:collapse;">
+            <thead>
+                <tr id="ctl00_ContentPlaceHolder1_ctl00_TableRow7" style="height:18px;">
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell123" align="center" style="color:White;background-color:black;border-width:1px;border-style:solid;font-size:14px;height:25px;width:110px;white-space:nowrap;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt2" class="Label">THỜI GIAN</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell124" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; height: 25px; width: 110px; white-space: nowrap;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt2" class="Label">THỨ HAI</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell125" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; width: 100px;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt3" class="Label">THỨ BA</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell126" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; width: 100px;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt4" class="Label">THỨ TƯ</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell127" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; width: 100px;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt5" class="Label">THỨ NĂM</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell128" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; width: 100px;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt6" class="Label">THỨ SÁU</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell129" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; width: 100px;"><span id="ctl00_ContentPlaceHolder1_ctl00_lblt7" class="Label">THỨ BẢY</span></td>
+                    <td id="ctl00_ContentPlaceHolder1_ctl00_TableCell130" align="center" style="color: White; background-color: black; border-width: 1px; border-style: solid; font-size: 14px; width: 100px;"><span id="ctl00_ContentPlaceHolder1_ctl00_lbltcn" class="Label">CHỦ NHẬT</span></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+
+                <tr>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                    <td style="border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;"></td>
+                </tr>
+
+                <tr>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỜI GIAN</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỨ HAI</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỨ BA</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỨ TƯ</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỨ NĂM</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỨ SÁU</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">THỨ BẢY</td>
+                    <td align="center" style="color: White; background-color: black; border-color: Gray; border-width: 1px; border-style: solid; height: 22px; width: 110px;">CHỦ NHẬT</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table style="width: 100%; text-align: left">
+            <tbody>
+                <tr>
+                    <td align="center">
+                        <div style="text-align: center">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$btnDt" value="Tuần Đầu" id="ctl00_ContentPlaceHolder1_ctl00_btnDt" class="DefaultButton">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$btnTrangTruoc" value="Tuần Trước" id="ctl00_ContentPlaceHolder1_ctl00_btnTrangTruoc" disabled="disabled" class="DefaultButton">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$btnTuanToi" value="Tuần Kế" id="ctl00_ContentPlaceHolder1_ctl00_btnTuanToi" class="DefaultButton">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$ctl00$btnTuanCuoi" value="Tuần Cuối" id="ctl00_ContentPlaceHolder1_ctl00_btnTuanCuoi" class="DefaultButton">
+                        </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
