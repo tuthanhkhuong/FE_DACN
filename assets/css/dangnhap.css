@@ -70,7 +70,7 @@ img {
 .login-content-title-left p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 40px;
     text-align: right;
     margin-bottom: 0px;
 }
@@ -101,8 +101,8 @@ img {
 
 .login-content-title-right span {
     color: white;
-    font-family: "Times New Roman Italic";
-    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
 .login-content-title {
@@ -157,6 +157,7 @@ form#user-login > div > .form-group {
 }
     #edit-forgot-password a {
         color: #20BE07;
+        margin-left: 5px
     }
 .form-group {
     margin-bottom: 15px;
