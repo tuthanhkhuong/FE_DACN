@@ -27,7 +27,7 @@
             <div class="header-right">
                 <div id="header-menu" class="header-menu">
                   
-                    <ul class="menu">
+                    <ul id="nav">
                         <li><a href="/vi/tin-tuc">
                             <i class="logo-icon fa fa-home"></i>
                                 TIN TỨC</a>
@@ -51,16 +51,18 @@
                             <a href="/vi/thong-tin-thanh-vien"><i class="logo-icon fa fa-users"></i>                       
                             THÔNG TIN THÀNH VIÊN</a>               
                         </li>
+
+                        <li>                   
+                            <a href="/vi/lien-he"><i class="logo-icon fa fa-users"></i>                       
+                            LIÊN HỆ</a>               
+                        </li>
                     </ul>
 
                     
                 </div>
+            </div>
 
-                <div class="header-hotline">
-                    <span class="hot-line"><a href="tel:19001080">19001080 </a> <span>/</span> 
-                    <a href="tel: (+84)3939 2929">(+84)3939 2929</a></span>
-                </div>
-
+            <div class="header-right-icon">
                 <span id="language-active" class=" vi"></span>
 
                 <div class="header-login dropdown dropdown-user">
@@ -71,62 +73,77 @@
                         </a>
                         
                     </div>
-
-            </div>
+                </div>
         </div>
     </div>
 
     </header>
     
     <!-- banner -->
-    <!--
-    <div id="main-container">
-        <section class="content">
-            <div id="content" class="clearfix">
-                <div class="tabs"></div>
-                <div class="home-form-and-event">
-                    <div class="container home-form-and-event-container">
-                    
-            <div id="mainslider">
-                            <div class="main-slider-wrapper">
-                                <div class="slide"><img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner1.jpg"></div>
-                                <div class="slide"><img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner2.jpg"></div> 
-                            </div>
-            </div> 
-
-            <!--
-            <div class="main-slider-form">
-                <div class="container main-slider-form-container">
-                    </div>
-            </div> 
-                </div> 
-
-                <input type="hidden" id="main-slider-sleep" value="3">
-      
-                        -->
-
-        <div class="home-form-and-event">
-                    <div class="container home-form-and-event-container">
-                        
-        <div id="main-slider">
-        <div class="main-slider-content">
-            <div id="slide-content-1"><div class="slider-wrapper theme-default"><div id="slider-875911-desktop" class="cassiopeia-swiper cassiopeia-swiper-desktop  swiperSlide"><div class="swiper-container s0 swiper-container-fade swiper-container-horizontal"><div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 1140px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a href="" class="swiper-slide-link"><img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner1.jpg" alt=""></a></div><div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1140px; opacity: 1; transform: translate3d(-1140px, 0px, 0px); transition-duration: 0ms;"><a href="" class="swiper-slide-link"><img src="" alt=""></a></div><div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 1140px; opacity: 1; transform: translate3d(-2280px, 0px, 0px); transition-duration: 0ms;"><a href="" class="swiper-slide-link"><img src="" alt=""></a></div><div class="swiper-pagination"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 1140px; opacity: 1; transform: translate3d(-3420px, 0px, 0px); transition-duration: 0ms;"><a href="" class="swiper-slide-link"><img src="" alt=""></a></div></div><div class="swiper-control">
-                            <div class="swiper-nav">
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        
-                        </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></div></div>        </div>
-        <div class="main-slider-form">
-            <div class="container main-slider-form-container">
-            </div>
-        </div>
-    </div>
-                <input type="hidden" id="main-slider-sleep" value="3">
+    <div class="home-banner">    
+        <div class="slidershow middle">      
+            <div class="slides">        
+                <input type="radio" name="r" id="r1" checked>        
+                <input type="radio" name="r" id="r2">       
+                <input type="radio" name="r" id="r3">        
+                <input type="radio" name="r" id="r4">        
+                <input type="radio" name="r" id="r5">
         
-                        
-                    </div>
+       
+                <div class="slide s1">         
+                    <img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner1.jpg" alt="">       
                 </div>
+       
+                <div class="slide">        
+                    <img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner02.jpg" alt="">      
+                </div>
+      
+                <div class="slide">       
+                    <img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner03.jpg" alt="">      
+                </div>
+      
+                <div class="slide">         
+                    <img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner4.jpg" alt="">      
+                </div>
+        
+                <div class="slide">         
+                    <img src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner5.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>    
+                <label for="r2" class="bar"></label>    
+                <label for="r3" class="bar"></label> 
+                <label for="r4" class="bar"></label>   
+                <label for="r5" class="bar"></label>      
+            </div>                  
+        </div>  
+    </div>
+
+        <!-- Search -->
+                        <div class="home-badminton-yard-container-inner">
+
+                            <div class="home-form">
+                                <form class="form-search-fixed" action="/vi" method="post" id="cassiopeia-fixed-search-form" accept-charset="UTF-8">
+                                    <div> 
+                                        
+                                    <div class="form-group wrap-search">
+                                        <div class="form-item form-item-fixed-form-search-key form-type-textfield form-group"> <label class="control-label" for="edit-fixed-form-search-key"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                                        <input placeholder="Bạn muốn chơi cầu lông ở đâu?" autocomplete="off" class="form-control form-text" type="text" id="edit-fixed-form-search-key" name="fixed-form-search-key" value="" size="60" maxlength="128"></div>        
+                                        <ul class="result"></ul>
+                                    </div>
+
+                                <button type="submit" id="edit-submit--2" name="op" value="<span class='fa fa-search'></span><span>Tìm kiếm</span>" class="btn btn-primary form-submit"><span class="fa fa-search"></span><span></span></button>
+
+                                    </div>
+                                </form>   
+                                
+
+                            </div>
+
+                            
+                        </div>
 
     <!-- Tin tức -->
 
@@ -136,6 +153,8 @@
                 <h3><a href="/tin-tuc">Tin tức</a></h3>
             </div>
 
+
+
         <div class="home-news-content">
         <div class="home-news-items row">
 
@@ -143,7 +162,7 @@
             <div class="article-type-5">
                 <div class="article-type-5-container">
                     <div class="article-image">
-                        <a href="/vi/cap-nhat-tinh-trang-san-san-mo-cua-trong-mua-dich-COVID-19"><img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner1.jpg" width="250" height="287" alt="" title=""></a>      
+                        <a href="/vi/cap-nhat-tinh-trang-san-san-mo-cua-trong-mua-dich-COVID-19"><img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/new1.jpg" width="250" height="287" alt="" title=""></a>      
                     </div>
             <div class="article-title">
                 <a href="/vi/cap-nhat-tinh-trang-san-san-mo-cua-trong-mua-dich-COVID-19">Cập nhật tình trạng sân mở cửa trong mùa dịch COVID-19 </a>           
@@ -157,7 +176,7 @@
                 <div class="article-type-5-container">
                     <div class="article-image">
                         <a href="/vi/cap-nhat-tinh-hinh-dong-mo-cua-san-cau-long-viet-nam-luu-y">
-                        <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/banner2.jpg" width="250" height="287" alt="" title=""></a>      
+                        <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/new2.jpg" width="250" height="287" alt="" title=""></a>      
                     </div>
             <div class="article-title">
                 <a href="/vi/cap-nhat-tinh-hinh-dong-mo-cua-san-cau-long-viet-nam-luu-y">Cập nhật tình hình đóng mở cửa sân cầu lông Việt Nam - Lưu ý</a>        
@@ -171,7 +190,7 @@
                 <div class="article-type-5-container">
                     <div class="article-image">
                         <a href="/vi/5-meo-hay-khi-choi-cau-long-trong-thoi-tiet-nang-nong">
-                        <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/05_clb.jpg" width="250" height="287" alt="" title=""></a>       
+                        <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/new3.jpg" width="250" height="287" alt="" title=""></a>       
                     </div>
                     <div class="article-title">
                         <a href="/vi/5-meo-hay-khi-choi-cau-long-trong-thoi-tiet-nang-nong">5 mẹo hay khi chơi cầu lông trong thời tiết nắng nóng</a>          
@@ -185,7 +204,7 @@
                 <div class="article-type-5-container">
                     <div class="article-image">
                         <a href="/vi/cap-nhat-san-cau-long-mo-cua-va-gia-choi-cau-long-uu-dai">
-                        <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/03_clb.jpg" width="250" height="287" alt="" title=""></a>     
+                        <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/new4.jpg" width="250" height="287" alt="" title=""></a>     
                     </div>
                     <div class="article-title">
                         <a href="/vi/cap-nhat-san-cau-long-mo-cua-va-gia-choi-cau-long-uu-dai">Cập nhật:  Sân cầu lông mở cửa và giá chơi cầu lông ưu đãi</a>       
@@ -208,43 +227,14 @@
 
 
 
-        <!-- Search -->
-                        <div class="home-badminton-yard-container-inner">
-
-                            <div class="home-form">
-                                <form class="form-search-fixed" action="/vi" method="post" id="cassiopeia-fixed-search-form" accept-charset="UTF-8">
-                                    <div> 
-                                        
-                                    <div class="form-group wrap-search">
-                                        <div class="form-item form-item-fixed-form-search-key form-type-textfield form-group"> <label class="control-label" for="edit-fixed-form-search-key"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
-                                        <input placeholder="Bạn muốn chơi cầu lông ở đâu?" autocomplete="off" class="form-control form-text" type="text" id="edit-fixed-form-search-key" name="fixed-form-search-key" value="" size="60" maxlength="128"></div>        
-                                        <ul class="result"></ul>
-                                    </div>
-
-                                <button type="submit" id="edit-submit--2" name="op" value="<span class='fa fa-search'></span><span>Tìm kiếm</span>" class="btn btn-primary form-submit"><span class="fa fa-search"></span><span></span></button>
-                                <input type="hidden" name="form_build_id" value="form-lZhhyKExkzQjuR4iWKUhkSwyWXFZEzTa0F65JyUZKMc">
-                                <input type="hidden" name="form_token" value="hoeUvWGNdWsNnlApuhbmfYnAGmbCtE3l86GtVFu-Yx8">
-                                <input type="hidden" name="form_id" value="cassiopeia_fixed_search_form">
-
-                                    <div class="home-node-event">
-                                        <a href="Hiển thị bảng thông tin trang đóng mở cửa mùa dịch bệnh COVID-19">ĐÓNG MỞ CỬA SÂN MÙA DỊCH COVID-19</a>
-                                    </div>
-
-                                    </div>
-                                </form>   
-                                
-
-                            </div>
-
-                            
-                        </div>
+        
 
            
         <!-- content chính -->
         <div class="home-badminton-yard">
         <div class="container home-badminton-yard-container">
             <div class="home-title color-20BE07">
-                <h3><a href="/badminton-yard">Badminton Yards</a></h3>
+                <h3><a href="/badminton-yard">Sân</a></h3>
             </div>
             <div class="home-badminton-yard-content">
                 <div class="row home-badminton-yard-items">
@@ -252,7 +242,7 @@
                             <div class="home-badminton-yard-item-container">
                                 <div class="home-badminton-yard-item-img">
                                     <a href="/vi/san-tap-1">
-                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/06_clb.jpg" width="268" height="168" alt="" title=""></a>                                </div>
+                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/santap1.jpg" width="268" height="168" alt="" title=""></a>                                </div>
                                 <div class="home-badminton-yard-item-group">
                                     <div class="home-badminton-yard-item-title">
                                         <a href="/vi/san-tap-1">Sân tập 1</a>          
@@ -275,7 +265,7 @@
                             <div class="home-badminton-yard-item-container">
                                 <div class="home-badminton-yard-item-img">
                                     <a href="/vi/san-tap-2">
-                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/02_clb.jpg" width="268" height="168" alt="" title=""></a>                                </div>
+                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/santap2.jpg" width="268" height="168" alt="" title=""></a>                                </div>
                                 <div class="home-badminton-yard-item-group">
                                     <div class="home-badminton-yard-item-title">
                                         <a href="/vi/san-tap-1">Sân tập 2</a>          
@@ -298,7 +288,7 @@
                             <div class="home-badminton-yard-item-container">
                                 <div class="home-badminton-yard-item-img">
                                     <a href="/vi/san-tap-3">
-                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/04_clb.jpg" width="268" height="168" alt="" title=""></a>                                </div>
+                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/santap3.jpg" width="268" height="168" alt="" title=""></a>                                </div>
                                 <div class="home-badminton-yard-item-group">
                                     <div class="home-badminton-yard-item-title">
                                         <a href="/vi/san-tap-3">Sân tập 3</a>          
@@ -321,7 +311,7 @@
                             <div class="home-badminton-yard-item-container">
                                 <div class="home-badminton-yard-item-img">
                                     <a href="/vi/san-tap-4">
-                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/05_clb.jpg" width="268" height="168" alt="" title=""></a>                                </div>
+                                    <img typeof="foaf:Image" class="img-responsive" src="D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/santap4.jpg" width="268" height="168" alt="" title=""></a>                                </div>
                                 <div class="home-badminton-yard-item-group">
                                     <div class="home-badminton-yard-item-title">
                                         <a href="/vi/san-tap-4">Sân tập 4</a>          
@@ -355,7 +345,7 @@
 
 
        <!-- ------------------footer--------------------- -->
-<footer id="footer">
+<div class="footer">
     <div class="footer-top">
         <div class="container footer-top-container">
             <div class="footer-top-link">
@@ -400,7 +390,7 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
 </div>
 
 </body>

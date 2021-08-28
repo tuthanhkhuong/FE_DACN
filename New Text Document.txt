@@ -1,4 +1,4 @@
-doi mat khau :
+doi mat khau : xong
 queen mat khau nut check (xac nhan)
 mat khau moi
 xac nhan mat khau moi
@@ -39,3 +39,4 @@ angular + api + git ve quan li source
 
 mung 1 gui co cuon bao cao
 lam bao cao trong ngay 30,31
+

@@ -17,9 +17,61 @@ html {
 }
 
 
+/* --------------------------*/
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+
+.article-type-5-container .article-title a {
+    font-family: "UTM_AVO";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+    padding: 10px 0px;
+    width: 70%;
+}
+.home-node-add {
+    text-align: right;
+}.home-node-add a {
+    color: #333333;
+}
+.home-badminton-yard-item-group {
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 6px 6px;
+    padding: 14px 15px 27px 15px;
+    width: 64%;
+}
+.fa-angle-double-right:before {
+    content: "\f101";
+    color: #20BE07;
+}
+/* --------------------------*/
+
+
 
 /*header*/
-
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+#nav  li  a {
+    display: block;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+}
 
 #language-active.vi::before {
     content: '';
@@ -56,7 +108,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1140px;
+    width: 1400px;
 }
 
 img {
@@ -66,8 +118,9 @@ img {
 }
 
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    max-width: 45%;
+    max-width: 100%;
     height: auto;
+    display: block
 }
 
 #header .header-right {
@@ -117,7 +170,7 @@ img {
 
 .header-login a.user-avatar img {
     display: block;
-    margin-right: 5px;
+    margin-left: 20px;
     width: 32px;
     height: 32px;
     border-radius: 60%;
@@ -129,25 +182,9 @@ img {
     align-items: center;
 }
 
-/*so dien thoai*/
-.hot-line {
-    font-size: 15px;
-    font-family: UTM_AVO;
-    display: block;
-    color: #20BE07;
-    position: relative;
-    margin-left: 23px;
+.header-right-icon{
+    display: flex;
 }
-
-    .hot-line::before {
-        content: '';
-        position: absolute;
-        background-image: url("D:/Dowloads/FE_DACN-Copy/FE_DACN - Copy/assets/img/iconp.png");
-        width: 14px;
-        height: 14px;
-        left: -19px;
-        top: 4px;
-    }
 
 a:hover, a {
     text-decoration: none;
@@ -176,106 +213,98 @@ a:hover, a {
 }
 
 /*banner*/
-::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-}
-::-webkit-scrollbar-thumb {
-    background: #20BE07;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-#mainslider {
-    overflow: hidden;
-    height: 510px;
-    width: 728px;
-    margin: 0 auto;
+
+.home-banner{
+    margin-top: 400px;
 }
 
-.slide-wrapper {
-    width: 2912px;
-    -webkit-animation: slide 14s ease infinite;
+.slidershow {
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -73%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 10px;
+    background-color: #559392;
+    height: 10px;
+    border: 2px solid #559392;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+    .bar:hover {
+        background: #fff;
+    }
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
 }
 
 .slide {
-    float: left;
-    height: 510px;
-    width: 728px;
+    width: 20%;
+    transition: 0.6s;
 }
 
-@-webkit-keyframes slide {
-    20% {
-        margin-left: 0px;
+    .slide img {
+        width: 100%;
+        height: 100%;
     }
 
-    30% {
-        margin-left: -728px;
-    }
-
-    50% {
-        margin-left: -728px;
-    }
-
-    60% {
-        margin-left: -1456px;
-    }
-
-    80% {
-        margin-left: -1456px;
-    }
+#r1:checked ~ .s1 {
+    margin-left: 0;
 }
 
-.swiper-slide-link > img, .swiper-slide > img {
-    width: 100%;
-    max-width: none;
-    -ms-transform: translate(-50%, -0%);
-    -webkit-transform: translate(-50%, -0%);
-    -moz-transform: translate(-50%, -0%);
-    transform: translate(-35%, -0%);
-    position: relative;
-    left: 50%;
-    top: 0%;
+#r2:checked ~ .s1 {
+    margin-left: -20%;
 }
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
 /*tin tuc*/
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
-        display: table;
-        content: " ";
-        box-sizing: border-box;
-    }
-    
-
 .home-title {
     position: relative;
     margin-bottom: 20px;
 }
-
-.home-title.color-20BE07:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-    background: #20BE07;
-}
-
 .home-title.color-20BE07 h3 {
     background: #20BE07;
 }
-a:hover, a {
-    text-decoration: none;
-    color: unset;
-}
 .home-title h3 {
-    width: 200px;
+    width: 125px;
     height: 51px;
     margin: 0px;
     border-radius: 7px 7px 0px 0px;
@@ -288,130 +317,26 @@ a:hover, a {
     justify-content: center;
     text-transform: uppercase;
 }
-
-
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
+a:hover, a {
+    text-decoration: none;
+    color: unset;
 }
-.article-type-5-container .article-title a {
-    font-family: "UTM_AVO";
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 12px;
-    padding: 10px 0px;
-}
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.article-type-5-container .article-image {
-    width: 250px;
-}
-.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-img {
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-}
-    img[AttributesStyle] {
-        width: 250px;
-        aspect-ratio: auto 250 / 287;
-        height: 287px;
-    }
-
-.home-node-add a {
-    color: #333333;
-}
-.home-node-add {
-    text-align: right;
-}
-.home-node-add a span {
-        color: #20BE07;
-
-}
-* {
-    box-sizing: border-box;
-}
-
-
-
-/*badminton yard*/
-.home-badminton-yard {
-    margin-bottom: 20px;    
-}
-.home-badminton-yard-item-img img {
-    width: 40%;
-    margin-bottom: 20px;
-    margin-left: 15px;
-}
-.home-badminton-yard-item-group {
-    border: 1px solid #ccc;
-    border-radius: 0px 0px 6px 6px;
-    padding: 14px 15px 27px 15px;
-    float: right;
-    margin-top: -210px;
-    margin-right: 400px;
-    width: 300px;
-}
-.home-badminton-yard-item-title a {
-    font-size: 16px;
-    color: #333333;
-    display: -webkit-box;
-    max-width: 100%;
-    height: 44px;
-    margin: 0 auto;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 15px;
-}
-.home-badminton-yard-item-date {
-    margin-bottom: 6px;
-    height: 22px;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-}
-.fa-clock-o:before {
-    content: "\f017";
-}
-.home-badminton-yard-item-price {
-    margin-bottom: 17px;
-}
-.home-badminton-yard-item-link a {
-    color: #333333;
-    position: relative;
-}
-.home-badminton-yard-item-price span {
-    color: #20BE07;
-}
-.home-badminton-yard-item-price span {
-    color: #20BE07;
-}
-.home-badminton-yard-item-link a::before {
+.home-title.color-20BE07:before {
     position: absolute;
     content: "";
-    width: 70px;
-    height: 1px;
-    background: #333333;
-    bottom: -3px;
+    width: 100%;
+    height: 2px;
     left: 0px;
+    bottom: 0px;
+    background: #20BE07;
 }
 
+.article-image{
+    display: flex;
+}
 
-/*search*/
+/*badminton yard*/
+
 /*  -------- Search form  --------   */
 .container-inline-date .form-item input, .container-inline-date .form-item select, .container-inline-date .form-item option {
     margin-right: 5px;
@@ -539,7 +464,7 @@ form.form-search-fixed .wrap-search {
 }
 
 form.form-search-fixed input {
-    width: 80%;
+    width: 60%;
     height: 46px;
     padding: 0px 35px;
     border: 1px solid #20BE07;
@@ -594,8 +519,9 @@ form.form-search-fixed button {
 form.form-search-fixed > div {
     width: 100%;
     display: flex;
+    margin-top: 15px;
     align-items: center;
-    /*justify-content: center;*/
+    justify-content: flex-end;
 }
 
 .form-search-fixed .form-item-fixed-form-search-key {
@@ -616,9 +542,11 @@ form.form-search-fixed > div {
 
 form.form-search-fixed button[type=submit] {
     border: none;
-    margin-bottom: 15px;
-    margin-left: -120px;
+    margin-bottom: 9px;
+    margin-left: -220px;
     color: white;
+    height: 35px;
+    width: 8%
 }
 
     form.form-search-fixed button[type=submit]:hover {
@@ -637,12 +565,14 @@ form.form-search-fixed button[type=submit] {
 
 
 /*footer*/
-#footer .footer-top {
+.footer .footer-top {
     color: white;
 }
+
 .footer-top {
     padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #ccc;
+    background-color: black;
 }
 #footer {
     background: black;
@@ -682,10 +612,11 @@ ul, ol {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: black
 }
 .footer-bottom-address span {
     font-size: 14px;
-    color: #b1b1b1;
+    color: white;
 }
 .footer-bottom-container-inner {
     display: flex;
